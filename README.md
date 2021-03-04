@@ -13,7 +13,15 @@
 2. **Play.ipynb**을 실행해 저장한 모델로 AI와 틱택토 게임을 진행할 수 있습니다. (선공 : usr0, 후공 : usr1)
 
 ## Play Result
+### < us0_play_with_AI >
 
+(https://github.com/KKN18/AI-TicTacToe/blob/main/result/us0_result.PNG)
+
+### < us1_play_with_AI >
+
+(https://github.com/KKN18/AI-TicTacToe/blob/main/result/us1_result-1.PNG)
+
+(https://github.com/KKN18/AI-TicTacToe/blob/main/result/usr1_result-2.PNG)
 
 ## Reference
 [Gym TicTacToe](https://github.com/ClementRomac/gym-tictactoe)
