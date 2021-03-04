@@ -15,13 +15,11 @@
 ## Play Result
 ### < us0_play_with_AI >
 
-<img src = "https://github.com/KKN18/AI-TicTacToe/blob/main/result/us0_result.PNG" width = "20%">
+<img src = "https://github.com/KKN18/AI-TicTacToe/blob/main/result/us0_result.PNG">
 
 ### < us1_play_with_AI >
 
-<img src = "https://github.com/KKN18/AI-TicTacToe/blob/main/result/us1_result-1.PNG" width = "20%">
-
-<img src = "https://github.com/KKN18/AI-TicTacToe/blob/main/result/usr1_result-2.PNG" width = "30%">
+<img src = "https://github.com/KKN18/AI-TicTacToe/blob/main/result/us1_result.PNG">
 
 ## Reference
 [Gym TicTacToe](https://github.com/ClementRomac/gym-tictactoe)
