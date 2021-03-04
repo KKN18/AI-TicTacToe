@@ -21,7 +21,7 @@
 
 <img src = "https://github.com/KKN18/AI-TicTacToe/blob/main/result/us1_result-1.PNG" width = "20%">
 
-<img src = "https://github.com/KKN18/AI-TicTacToe/blob/main/result/usr1_result-2.PNG" width = "20%">
+<img src = "https://github.com/KKN18/AI-TicTacToe/blob/main/result/usr1_result-2.PNG" width = "30%">
 
 ## Reference
 [Gym TicTacToe](https://github.com/ClementRomac/gym-tictactoe)
