@@ -19,9 +19,9 @@
 
 ### < us1_play_with_AI >
 
-   ![](https://github.com/KKN18/AI-TicTacToe/blob/main/result/us1_result-1.PNG)
+![](https://github.com/KKN18/AI-TicTacToe/blob/main/result/us1_result-1.PNG) {: width = "100"}
 
-![](https://github.com/KKN18/AI-TicTacToe/blob/main/result/usr1_result-2.PNG)
+![](https://github.com/KKN18/AI-TicTacToe/blob/main/result/usr1_result-2.PNG) {: width = "100"}
 
 ## Reference
 [Gym TicTacToe](https://github.com/ClementRomac/gym-tictactoe)
