@@ -21,6 +21,13 @@
 
 <img src = "https://github.com/KKN18/AI-TicTacToe/blob/main/result/us1_result.PNG">
 
+## < Shortcoming >
+<img src = "https://github.com/KKN18/AI-TicTacToe/blob/main/result/shortcome.PNG">
+
+"자신이 이기는 방법"은 학습했지만 "상대가 이기는 걸 막는 방법"은 학습하지 못한 것으로 보입니다.
+
+이를 위한 해결책을 고안중입니다.
+
 ## Reference
 [Gym TicTacToe](https://github.com/ClementRomac/gym-tictactoe)
 
