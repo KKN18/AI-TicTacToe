@@ -22,7 +22,7 @@ import torch
 env = gym.make('TicTacToe-v1', symbols=[-1, 1], board_size=3, win_size=3)
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--epochs', type=int, default=10, help='number of epochs of training')
+parser.add_argument('--epoch', type=int, default=10, help='number of epochs of training')
 parser.add_argument('--ckpt0_path', type=str, default='/content/drive/MyDrive/Colab Notebooks/Reinforcement Learning/us0_weight', help='directory to save user0 weight')
 parser.add_argument('--ckpt1_path', type=str, default='/content/drive/MyDrive/Colab Notebooks/Reinforcement Learning/us1_weight', help='directory to save user1 weight')
 opt = parser.parse_args()
