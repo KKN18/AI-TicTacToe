@@ -12,6 +12,14 @@
 1. **TicTacToe.ipynb** 을 실행해 학습을 진행하고 us0_weight, us1_weight 폴더에 각각 선공, 후공 모델 가중치를 저장합니다.
 2. **Play.ipynb**을 실행해 저장한 모델로 AI와 틱택토 게임을 진행할 수 있습니다. (선공 : usr0, 후공 : usr1)
 
+!git clone https://github.com/ClementRomac/gym-tictactoe
+
+%cd gym-tictactoe
+
+!python setup.py install
+
+!pip install -q pyyaml h5py
+
 ## Play Result
 ### < us0_play_with_AI >
 
