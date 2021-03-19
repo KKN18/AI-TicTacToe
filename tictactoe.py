@@ -179,7 +179,7 @@ def build_model():
     model.add(Dense(9, activation='softmax'))
     model.compile(loss='mse', optimizer=Adam())
     return model
-
+s
 def train_model(model, training_set):
     X = np.array([i[0] for i in training_set]).reshape(-1, 9)
     y = np.array([i[1] for i in training_set]).reshape(-1, 9)
