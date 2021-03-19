@@ -27,6 +27,8 @@ parser.add_argument('--ckpt0_path', type=str, default='/content/drive/MyDrive/Co
 parser.add_argument('--ckpt1_path', type=str, default='/content/drive/MyDrive/Colab Notebooks/Reinforcement Learning/us1_weight', help='directory to save user1 weight')
 opt = parser.parse_args()
 
+epoch = opt.epoch
+
 if not torch.cuda.is_available():
     print("WARNING: You have to run with CUDA device")
 
@@ -182,7 +184,7 @@ def build_model():
 def train_model(model, training_set):
     X = np.array([i[0] for i in training_set]).reshape(-1, 9)
     y = np.array([i[1] for i in training_set]).reshape(-1, 9)
-    model.fit(X, y, opt.epoch)
+    model.fit(X, y, epoch)
 
 def predict_or_random():
     res = random.randint(1, 10)
