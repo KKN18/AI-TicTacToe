@@ -31,8 +31,8 @@ if not torch.cuda.is_available():
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--user_mode', type=int, default=0, help='First player : 0, Second player : 1')
-parser.add_argument('--ckpt0_path', type=str, default='/content/drive/MyDrive/Colab Notebooks/Reinforcement Learning/us0_weight/', help='directory of user0 weight')
-parser.add_argument('--ckpt1_path', type=str, default='/content/drive/MyDrive/Colab Notebooks/Reinforcement Learning/us1_weight/', help='directory of user1 weight')
+parser.add_argument('--ckpt0_path', type=str, default='/content/drive/MyDrive/Colab Notebooks/Reinforcement Learning/us0_weight', help='directory of user0 weight')
+parser.add_argument('--ckpt1_path', type=str, default='/content/drive/MyDrive/Colab Notebooks/Reinforcement Learning/us1_weight', help='directory of user1 weight')
 opt = parser.parse_args()
 
 def build_model():
@@ -45,12 +45,12 @@ def build_model():
 
 us0_model = build_model()
 
-us0_weight_dir = opt.ckpt0_path + 'us0.ckpt'
+us0_weight_dir = opt.ckpt0_path + '/us0.ckpt'
 us0_model.load_weights(us0_weight_dir)
 
 us1_model = build_model()
 
-us1_weight_dir = opt.ckpt1_path +'us1.ckpt'
+us1_weight_dir = opt.ckpt1_path +'/us1.ckpt'
 us1_model.load_weights(us1_weight_dir)
 
 def us0_predictor(s):
