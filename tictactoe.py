@@ -23,9 +23,10 @@ env = gym.make('TicTacToe-v1', symbols=[-1, 1], board_size=3, win_size=3)
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--epochs', type=int, default=10, help='number of epochs of training')
-parser.add_argument('--ckpt0_path', type=str, default='/content/drive/MyDrive/Colab Notebooks/Reinforcement Learning/us0_weight/', help='directory to save user0 weight')
-parser.add_argument('--ckpt1_path', type=str, default='/content/drive/MyDrive/Colab Notebooks/Reinforcement Learning/us1_weight/', help='directory to save user1 weight')
+parser.add_argument('--ckpt0_path', type=str, default='/content/drive/MyDrive/Colab Notebooks/Reinforcement Learning/us0_weight', help='directory to save user0 weight')
+parser.add_argument('--ckpt1_path', type=str, default='/content/drive/MyDrive/Colab Notebooks/Reinforcement Learning/us1_weight', help='directory to save user1 weight')
 opt = parser.parse_args()
+
 
 if not torch.cuda.is_available():
     print("WARNING: You have to run with CUDA device")
@@ -182,7 +183,7 @@ def build_model():
 def train_model(model, training_set):
     X = np.array([i[0] for i in training_set]).reshape(-1, 9)
     y = np.array([i[1] for i in training_set]).reshape(-1, 9)
-    model.fit(X, y, opt.epoch)
+    model.fit(X, y, epochs = opt.epochs)
 
 def predict_or_random():
     res = random.randint(1, 10)
