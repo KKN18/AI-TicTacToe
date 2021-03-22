@@ -5,21 +5,26 @@
 [OpenAI 틱택토 게임 환경](https://github.com/ClementRomac/gym-tictactoe)을 이용하였습니다.
 
 ## Setup
-<code> Google Colab Notebooks</code> 에서 <code> git clone</code> 커맨드를 입력합니다.
+ 먼저, 틱택토 게임환경을 불러옵니다.
 
-    !git clone https://github.com/KKN18/AI-TicTacToe.git
+    git clone https://github.com/ClementRomac/gym-tictactoe
+    cd gym-tictactoe
+    python setup.py install
+    
+ 해당 repository를 불러오고 다음 커맨드들을 입력합니다.
 
-1. **TicTacToe.ipynb** 을 실행해 학습을 진행하고 us0_weight, us1_weight 폴더에 각각 선공, 후공 모델 가중치를 저장합니다.
-2. **Play.ipynb**을 실행해 저장한 모델로 AI와 틱택토 게임을 진행할 수 있습니다. (선공 : usr0, 후공 : usr1)
+    git clone https://github.com/KKN18/AI-TicTacToe.git
+    cd AI-TicTacToe
+    !pip install -q pyyaml h5py
+   
+ 원하는 epoch만큼 강화학습 모델을 학습하고 us0_weight, us1_weight 폴더에 각각 선공, 후공 모델 가중치를 저장합니다.
+ 
+    python tictactoe.py --epochs 10 --ckpt0_path '/content/drive/MyDrive/Colab Notebooks/GitHub/AI-TicTacToe/us0_weight' --ckpt1_path '/content/drive/MyDrive/Colab Notebooks/GitHub/AI-TicTacToe/us1_weight'
 
-!git clone https://github.com/ClementRomac/gym-tictactoe
-
-%cd gym-tictactoe
-
-!python setup.py install
-
-!pip install -q pyyaml h5py
-
+ 학습이 끝나면 생성된 AI와 틱택토 게임을 진행할 수 있습니다. (user_mode 0 : 선공, 1 : 후공)
+ 
+    python play.py --user_mode 1 --ckpt0_path '/content/drive/MyDrive/Colab Notebooks/GitHub/AI-TicTacToe/us0_weight' --ckpt1_path '/content/drive/MyDrive/Colab Notebooks/GitHub/AI-TicTacToe/us1_weight'
+    
 ## Play Result
 ### < us0_play_with_AI >
 
